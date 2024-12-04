@@ -1,0 +1,63 @@
+.header {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.header2 {
+    background-image: url(resources/banner.jpg);
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: inherit;
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+a {
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+}
+
+.foot {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    bottom: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        gap: 10%;
+        flex-direction: column;
+    }
+
+    .foot {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        bottom: 10%;
+        flex-direction: column;
+    }
+
+}

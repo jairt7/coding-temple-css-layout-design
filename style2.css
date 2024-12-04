@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header" "main aside" "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 80px 600px 80px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media (max-width:768px) {
+    .grid-container {
+        grid-template-areas: "header" "main" "aside" "footer";
+        grid-template-columns: 1fr;
+    }
+}
